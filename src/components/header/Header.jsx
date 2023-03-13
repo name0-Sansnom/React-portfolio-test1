@@ -1,5 +1,9 @@
 import React from "react";
+import "../../index.css";
+import black from "../../asset/black.png";
+import CTA from "./CTA";
 import "./header.css";
+import HeaderSocial from "./HeaderSocial";
 
 const Header = () => {
   return (
@@ -9,8 +13,17 @@ const Header = () => {
         <h2>Nameless</h2>
 
         <h5 className="tex-light">FullStack Dev. (almost)</h5>
+        <CTA />
+        <HeaderSocial />
+
+        <div className="me">
+          <img src={black} alt="me" />
+        </div>
+
+        <a href="#contact" className="scroll__down">
+          scroll down
+        </a>
       </div>
-      
     </header>
   );
 };
