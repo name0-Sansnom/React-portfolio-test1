@@ -10,6 +10,7 @@ const Header = () => {
 
         <h5 className="tex-light">FullStack Dev. (almost)</h5>
       </div>
+      
     </header>
   );
 };
