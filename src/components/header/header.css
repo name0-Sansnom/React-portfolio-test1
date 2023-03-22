@@ -1,0 +1,84 @@
+header{
+    height: 100vh;
+    padding-top: 7rerm;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ======== CTA buttons style =========== */
+.cta {
+    display: flex;
+    margin-top: 2.7rem;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ======== Socials Icons Style =========== */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+/* ======== for the thing vertical line just below the socials icons ====== */
+.header__socials::after{
+    content: " ";
+    height: 2.5rem;
+    width: 2px;
+    background-color: var(--color-primary);
+}
+
+/* ======== header image with className"Me" ====== */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    /* for the left calc prop u could use this
+    left: 50%;
+    transform: translateX(-50%); */
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+}
+
+/* ========== Vertical scroll_Down text in header ========= */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+/* ========== Media Queries for Medium Devices ======== */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* ========== Media Queries for Small Devices ======== */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__socials, .scroll__down{
+        display: none;
+    }
+}

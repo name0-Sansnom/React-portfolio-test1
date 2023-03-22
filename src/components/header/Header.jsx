@@ -10,7 +10,7 @@ const Header = () => {
     <header>
       <div className="container header__container">
         <h5>Hello It's me</h5>
-        <h2>Nameless</h2>
+        <h1>Nameless</h1>
 
         <h5 className="tex-light">FullStack Dev. (almost)</h5>
         <CTA />
@@ -21,7 +21,7 @@ const Header = () => {
         </div>
 
         <a href="#contact" className="scroll__down">
-          scroll down
+          scroll down --&gt;
         </a>
       </div>
     </header>
