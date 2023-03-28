@@ -22,7 +22,7 @@ function Footer() {
     <footer>
     
     {/* adding footer__logo */}
-     <a href="#"className='footer__logo'>Alfa-Toute</a>
+     <a href="#header" className='footer__logo'>Alfa-Toute</a>
 
      {/* adding navbar component to be displayed in the footer with a different style */}
      {/* there is a css class i created in the nav component condition named 'footer-nav' i'll use thatt to style the navbar for my footer */}
