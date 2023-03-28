@@ -46,7 +46,7 @@
         grid-template-columns: 1fr;
         width: 80%;
         margin: 0 auto;
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 
     .experience__content{

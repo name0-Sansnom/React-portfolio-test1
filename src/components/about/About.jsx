@@ -14,7 +14,7 @@ const About = () => {
   <div className="container about__container">
     <div className="about__me">
       <div className="about__me-image">
-      <img src={Me} alt="About Me image" />
+      <img src={Me} alt="" />
       </div>
     </div>
     <div className="about__content">
@@ -41,7 +41,7 @@ const About = () => {
         I am a full-stack web developer with a passion for building
         websites and applications.
       </p>
-      <button className="btn btn-primary">Let's Talk</button>
+      <button href="#contact" className="btn btn-primary">Let's Talk</button>
     </div>
   </div>
 

@@ -1,0 +1,96 @@
+/* .footer-nav {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer-nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-nav p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: #666;
+} */
+
+footer {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  margin-top: 7rem;
+  font-size: 0.9rem;
+  display: block;
+}
+
+footer a {
+  color: var(--color-bg);
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+
+.footer-socials a {
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  transition: var(--transition);
+  display: flex;
+  border: 1px solid transparent;
+}
+
+.footer-socials a:hover {
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+}
+
+.footer__copyright {
+  color: var(--color-bg);
+  margin-bottom: 4rem;
+}
+
+/* ========== Media Queries for Small Devices ======== */
+@media screen and (max-width: 600px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-socials {
+    margin-bottom: 2rem;
+  }
+}

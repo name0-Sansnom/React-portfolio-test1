@@ -5,21 +5,21 @@ import { BsGithub } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 
-const HeaderSocial = () => {
+const HeaderSocial = ({ footerSocial }) => {
+
+  const socialIcons = [
+    {href: "https://linkdin.com", icons: <BsLinkedin /> },
+    {href: "https://github.com", icons:  <BsGithub />} ,
+    {href: "https://twitter.com", icons: <BsTwitter /> }, 
+    {href: "https://youtube.com", icons: <BsYoutube /> } 
+  ];
+
   return (
-    <div className="header__socials">
-      <a href="https://linkdin.com" target="_blank">
-        <BsLinkedin />
-      </a>
-      <a href="https://github.com" target="_blank">
-        <BsGithub />
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <BsTwitter/>
-      </a>
-      <a href="https://youtube.com" target="_blank">
-        <BsYoutube />
-      </a>
+    <div className={footerSocial ? "footer-socials" : "header__socials"}>
+
+    { socialIcons.map((icon) => (
+      <a href={icon.href} target="_blank" rel="noopener noreferrer"> {icon.icons}</a>
+    ) )}
     </div>
   );
 };

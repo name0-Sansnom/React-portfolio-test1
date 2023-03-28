@@ -1,34 +1,92 @@
-nav {
-   background: rgba(0, 0, 0, 0.3);
-   display: block;
-   padding: 0.7rem 1.7rem;
-   width: max-content;
-   position: fixed;
-   z-index: 2;
-   left: 50%;
-   transform: translateX(-50%);
-   bottom: 2rem;
-   display: flex;
-   gap: 0.8rem;
-   border-radius: 3rem;
-   backdrop-filter: blur(15px);
+.header-nav {
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  padding: 1.7rem 1.2rem;
+  /* width: max-content; */
+  position: fixed;
+  z-index: 999;
+  /* left: 50%; */
+  transform: translateY(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(15px);
+  /* try to fix right-side */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: max-content;
+  /* top: 40%; */
+  right: 0;
 }
- 
+
 /* ============ NAv Links style ============= */
-nav a {
-    background: transparent;
-    border-radius: 50%;
-    padding: 0.8rem;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
+.header-nav a {
+  background: transparent;
+  border-radius: 50%;
+  padding: 0.8rem;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-nav a:hover {
-    background: rgba(0, 0, 0, 0.3);
+.header-nav a:hover {
+  /* background: rgba(0, 0, 0, 0.3); */
+  background: var(--color-primary-variant);
 }
 
-nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
+.header-nav a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.header-nav a span {
+  display: none;
+  /* position: absolute;
+  top: 50%;
+  right: calc(100% + 20px);
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 5px;
+  background-color: var(--color-primary-variant);
+  backdrop-filter: blur(8px);
+  color: white;
+  border-radius: 3px;
+  transition: var(-transition); */
+}
+
+.header-nav a:hover span {
+  display: block;
+  position: absolute;
+  /* top: 50%; */
+  right: calc(100% + 10px);
+  transform: translateY(auto);
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 5px;
+  background-color: var(--color-primary-variant);
+  backdrop-filter: blur(8px);
+  color: white;
+  border-radius: 3px;
+  transition: var(-transition);
+}
+
+/* ========== Media Queries for Small Devices ======== */
+@media screen and (max-width: 600px) {
+  .header-nav {
+    left: 50%;
+    padding: 0.7rem 1.7rem;
+    width: max-content;
+    transform: translateX(-50%);
+    /* bottom: 90%; */
+    flex-direction: row;
+  }
+
+  .header-nav a:hover span {
+    display: none;
+  }
 }
