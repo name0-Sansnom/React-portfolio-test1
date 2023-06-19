@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+// import "./header.css";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
